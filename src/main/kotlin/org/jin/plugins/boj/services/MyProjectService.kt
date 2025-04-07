@@ -1,9 +1,9 @@
-package org.jetbrains.plugins.template.services
+package org.jin.plugins.boj.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import org.jetbrains.plugins.template.MyBundle
+import org.jin.plugins.boj.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {
