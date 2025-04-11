@@ -13,7 +13,7 @@
 
   <id>org.jin.plugins.boj</id>
 
-  <name>IntelliJ Plugin For BOJ</name>
+  <name>BOJ Submitter</name>
 
   <resource-bundle>messages.MyBundle</resource-bundle>
 
