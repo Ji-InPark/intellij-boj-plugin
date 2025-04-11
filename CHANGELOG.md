@@ -5,9 +5,9 @@
 ### Added
 
 - Project description
+- Add Submit BOJ feature
 
 ### Changed
-
 
 ## [1.0.0]
 

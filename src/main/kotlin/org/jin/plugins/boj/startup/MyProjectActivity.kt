@@ -3,6 +3,7 @@ package org.jin.plugins.boj.startup
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.ProjectActivity
+import com.intellij.openapi.ui.Messages
 
 class MyProjectActivity : ProjectActivity {
 

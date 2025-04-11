@@ -1,15 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>org.jin.plugins.boj</id>
-    <name>IntelliJ Plugin For BOJ</name>
-    <vendor>Jin Park</vendor>
+  <actions>
+    <action class="org.jin.plugins.boj.action.BojSubmitAction"
+      description="Submit code to BOJ by file name" id="Submit BOJ"
+      text="Submit BOJ">
+      <add-to-group anchor="first" group-id="EditorPopupMenu"/>
+    </action>
+  </actions>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
 
-    <depends>com.intellij.modules.platform</depends>
+  <id>org.jin.plugins.boj</id>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+  <name>IntelliJ Plugin For BOJ</name>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="org.jin.plugins.boj.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="org.jin.plugins.boj.startup.MyProjectActivity" />
-    </extensions>
+  <resource-bundle>messages.MyBundle</resource-bundle>
+
+  <vendor>Jin Park</vendor>
 </idea-plugin>
